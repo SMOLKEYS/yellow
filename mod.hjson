@@ -1,0 +1,9 @@
+{
+"name": "yellow",
+"displayName": "Yellow",
+"author": "SMOLKEYS",
+"description": "Reactor survivor.",
+"version": "0.1",
+"minGameVersion": "126",
+"hidden": false
+}
