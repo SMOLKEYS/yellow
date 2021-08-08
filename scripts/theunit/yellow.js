@@ -8,6 +8,7 @@ const yellow = extend(UnitType, "yellow", {
 });
 //aaaaaaa
 yellow.constructor = () => extend(UnitEntity, {});
-Vars.content.unit(39).defaultController = () => new DefenderAI();
+//will change soon
+yellow.defaultController = () => new DefenderAI();
 
 Log.info("yellow");
