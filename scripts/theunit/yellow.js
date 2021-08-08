@@ -1,5 +1,5 @@
 //hopefully this works
-const yellow = extend(UnitType, "yellow" {
+const yellow = extend(UnitType, "yellow", {
 //health is intentional, as yellow is literally just gonna be reginald from gray
   health: Number.MAX_VALUE;
   speed: 3;
