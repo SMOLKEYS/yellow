@@ -6,6 +6,7 @@ const yellow = extend(UnitType, "yellow", {
   drag: 0.01,
   flying: true,
   defaultController: () => new DefenderAI(),
+  sprite: Core.atlas.find("flare")
 });
 //aaaaaaa
 yellow.constructor = () => extend(UnitEntity, {});
