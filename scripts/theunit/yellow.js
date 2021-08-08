@@ -7,6 +7,4 @@ const yellow = extend(UnitType, "yellow", {
   flying: true,
   defaultController: new DefenderAI(),
 });
-//because mindustry refuses to work with me
-const yellowc = extend(UnitType, "yellow");
 yellow.constructor = () => extend(UnitEntity, {});
