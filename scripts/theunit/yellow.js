@@ -9,6 +9,5 @@ const yellow = extend(UnitType, "yellow", {
 //aaaaaaa
 yellow.constructor = () => extend(UnitEntity, {});
 yellow.defaultController = () => extend(DefenderAI, {});
-yellow.sprite = Core.atlas.find("flare");
 
 Log.info("yellow");
