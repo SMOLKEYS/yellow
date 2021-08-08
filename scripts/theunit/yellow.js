@@ -6,5 +6,6 @@ const yellow = extend(UnitType, "yellow", {
   drag: 0.01,
   flying: true,
   defaultController: () => new DefenderAI(),
-  constructor: () => extend(UnitEntity, {})
 });
+//aaaaaaa
+yellow.constructor = () => extend(UnitEntity, {});
