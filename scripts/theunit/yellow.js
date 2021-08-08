@@ -8,7 +8,7 @@ const yellow = extend(UnitType, "yellow", {
 });
 //aaaaaaa
 yellow.constructor = () => extend(UnitEntity, {});
-//will change soon
-yellow.defaultController = () => new DefenderAI();
+yellow.defaultController = () => extend(DefenderAI, {});
+yellow.sprite = Core.atlas.find("flare");
 
 Log.info("yellow");
