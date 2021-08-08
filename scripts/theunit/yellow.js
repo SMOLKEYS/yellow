@@ -10,6 +10,4 @@ const yellow = extend(UnitType, "yellow", {
 //aaaaaaa
 yellow.constructor = () => extend(UnitEntity, {});
 
-Vars.content.getByName(ContentType.unit,"yellow-yellow").spawn(Vars.player.x, Vars.player.y);
-
 Log.info("yellow");
