@@ -5,6 +5,5 @@ const yellow = extend(UnitType, "yellow", {
   accel: 0.08,
   drag: 0.01,
   flying: true,
-  sprite: flare,
   defaultController: new DefenderAI(),
 });
