@@ -1,4 +1,4 @@
-//hopefully this works
+
 const yellow = extend(UnitType, "yellow", {
   health: Number.MAX_VALUE,
   speed: 3,
@@ -8,4 +8,5 @@ const yellow = extend(UnitType, "yellow", {
   defaultController: new DefenderAI(),
 });
 //because mindustry refuses to work with me
+const yellowc = extend(UnitType, "yellow");
 yellow.constructor = () => extend(UnitEntity, {});
