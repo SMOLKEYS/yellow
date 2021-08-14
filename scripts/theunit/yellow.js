@@ -1,6 +1,6 @@
 
 const yellowMelterWeapon = extend(Weapon, {
-  reload: 120,
+  reload: 60,
 });
 
 const YMWB = extend(ContinuousLaserBulletType, {
