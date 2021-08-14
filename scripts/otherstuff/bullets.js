@@ -4,8 +4,4 @@ const yellowMelterWeaponBullet = extend(ContinuousLaserBulletType, {
   length: 8,
   width: 30 * 8,
   lifetime: 60,
-  colors: [
-    Pal.accent,
-    Pal.accent,
-    ]
 });
