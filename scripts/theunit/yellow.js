@@ -1,4 +1,7 @@
 
+//yes
+const yellowGuns = require("otherstuff/guns");
+
 const yellow = extend(UnitType, "yellow", {
   health: Number.MAX_VALUE,
   armor: Number.MAX_VALUE,
@@ -10,5 +13,7 @@ const yellow = extend(UnitType, "yellow", {
 //required, for some reason(thanks to iarkn#8872 for helping with this)
 yellow.constructor = () => extend(UnitEntity, {});
 yellow.defaultController = () => extend(DefenderAI, {});
+//weaponry
+yellow.weapons.add("yellowGuns.yellowMelterWeapon");
 
 Log.info("yellow");
