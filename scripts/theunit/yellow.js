@@ -27,8 +27,23 @@ const YDB = extend(LaserBulletType, {
   recoil: -8,
 });
 
+const yellowDripShoes = extend(Weapon, {
+  shots: 2,
+  reload: 5,
+});
+
+//yellow isnt really a ground unit, but meh, who are you to tell me that
+const YDSB = extend(BasicBulletType, {
+  damage: 10,
+  knockback: 10,
+  length: 8 * 2,
+  width: 8 * 2,
+  sprite: Core.atlas.load("yellowShoes"),
+});
+
 yellowMelterWeapon.bullet = YMWB;
 yellowDropkick.bullet = YDB;
+yellowDripShoes.bullet = YDSB;
 
 const yellow = extend(UnitType, "yellow", {
   health: Number.MAX_VALUE,
