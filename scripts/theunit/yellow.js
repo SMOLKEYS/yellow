@@ -8,12 +8,25 @@ const yellowMelterWeapon = extend(Weapon, {
 
 const YMWB = extend(ContinuousLaserBulletType, {
   damage: 75 /* begone */,
-  length: 240,
+  length: 30 * 8,
   width: 8,
   lifetime: 60,
 });
 
+const yellowDropkick = extend(Weapon, {
+  recoil: -80,
+  reload: 60 * 2,
+});
+
+const YDB = extend(LaserBulletType, {
+  damage: Number.MAX_VALUE,
+  length: 8 * 8,
+  width: 1,
+  lifetime: 1,
+});
+
 yellowMelterWeapon.bullet = YMWB;
+yellowDropkick.bullet = YDB;
 
 const yellow = extend(UnitType, "yellow", {
   health: Number.MAX_VALUE,
@@ -29,6 +42,8 @@ const yellow = extend(UnitType, "yellow", {
 yellow.constructor = () => extend(UnitEntity, {});
 yellow.defaultController = () => extend(DefenderAI, {});
 //weaponry
-yellow.weapons.add(yellowMelterWeapon);
+yellow.weapons.add(
+  yellowMelterWeapon, yellowDropkick
+);
 
 Log.info("yellow");
