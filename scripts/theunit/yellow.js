@@ -39,7 +39,7 @@ const YDSB = extend(BasicBulletType, {
   length: 8 * 2,
   width: 8 * 2,
   lifetime: 60 * 5,
-  sprite: Core.atlas.load("yellowShoes"),
+  sprite: Core.atlas.find("yellowShoes"),
 });
 
 yellowMelterWeapon.bullet = YMWB;
