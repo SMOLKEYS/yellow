@@ -40,7 +40,7 @@ const YDSB = extend(BasicBulletType, {
   length: 8 * 2,
   width: 8 * 2,
   lifetime: 60 * 5,
-  sprite: load("yellowShoes"),
+  sprite: "yellow-yellowShoes",
 });
 
 yellowMelterWeapon.bullet = YMWB;
