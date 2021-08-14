@@ -1,5 +1,5 @@
 
-const yellowBullets = require("bullets");
+const yellowBullets = require("otherstuff/bullets");
 
 const yellowMelterWeapon = extend(Weapon, {
   reload: 2 * 60,
