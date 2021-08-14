@@ -7,45 +7,28 @@ const yellowMelterWeapon = extend(Weapon, {
   shootSound: Sounds.explosionbig,
 });
 
-const YMWB = extend(ContinuousLaserBulletType, {
+const yellowMelterWeaponBullet = extend(ContinuousLaserBulletType, {
   damage: 75 /* begone */,
   length: 30 * 8,
   width: 8,
   lifetime: 60,
 });
 
-const yellowDropkick = extend(Weapon, {
-  recoil: -8,
-  reload: 60,
+const yellowBloom = extend(Weapon, {
+  reload: 60 * 5,
+  shots: 500,
+  inaccuracy: 360,
+  burstSpacing: 1,
 });
 
-const YDB = extend(LaserBulletType, {
-  damage: Number.MAX_VALUE,
-  length: 8 * 8,
-  width: 1,
-  lifetime: 1,
-  recoil: -8,
+const yellowBloomBullet = extend(BasicBulletType, {
+  damage: 50,
+  lifetime: 60 * 3,
+  speed: 4,
 });
 
-const yellowDripShoes = extend(Weapon, {
-  shots: 2,
-  inaccuracy: 5,
-  reload: 5,
-});
-
-//yellow isnt really a ground unit, but meh, who are you to tell me that
-const YDSB = extend(BasicBulletType, {
-  damage: 10,
-  knockback: 10,
-  length: 8 * 16,
-  width: 8 * 4,
-  lifetime: 60 * 5,
-  sprite: "yellow-yellowShoes",
-});
-
-yellowMelterWeapon.bullet = YMWB;
-yellowDropkick.bullet = YDB;
-yellowDripShoes.bullet = YDSB;
+yellowMelterWeapon.bullet = yellowMelterWeaponBullet;
+yellowBloom.bullet = yellowBloomBullet;
 
 const yellow = extend(UnitType, "yellow", {
   health: Number.MAX_VALUE,
@@ -62,7 +45,7 @@ yellow.constructor = () => extend(UnitEntity, {});
 yellow.defaultController = () => extend(DefenderAI, {});
 //weaponry
 yellow.weapons.add(
-  yellowMelterWeapon, yellowDropkick, yellowDripShoes
+  yellowMelterWeapon, yellowBloom
 );
 
 Log.info("yellow");
