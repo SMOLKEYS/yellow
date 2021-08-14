@@ -29,6 +29,7 @@ const YDB = extend(LaserBulletType, {
 
 const yellowDripShoes = extend(Weapon, {
   shots: 2,
+  inaccuracy: 5,
   reload: 5,
 });
 
@@ -39,7 +40,7 @@ const YDSB = extend(BasicBulletType, {
   length: 8 * 2,
   width: 8 * 2,
   lifetime: 60 * 5,
-  sprite: Core.atlas.find("yellowShoes"),
+  sprite: yellowShoes,
 });
 
 yellowMelterWeapon.bullet = YMWB;
