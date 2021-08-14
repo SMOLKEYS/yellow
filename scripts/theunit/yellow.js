@@ -60,7 +60,7 @@ yellow.constructor = () => extend(UnitEntity, {});
 yellow.defaultController = () => extend(DefenderAI, {});
 //weaponry
 yellow.weapons.add(
-  yellowMelterWeapon, yellowDropkick
+  yellowMelterWeapon, yellowDropkick, yellowDripShoes
 );
 
 Log.info("yellow");
