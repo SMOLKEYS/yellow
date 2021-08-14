@@ -1,10 +1,13 @@
 
 const yellowMelterWeapon = extend(Weapon, {
   reload: 60,
+  shots: 15,
+  inaccuracy: 30,
+  shootSound: Fx.explosionBig,
 });
 
 const YMWB = extend(ContinuousLaserBulletType, {
-  damage: 40,
+  damage: 75 /* begone */,
   length: 240,
   width: 8,
   lifetime: 60,
