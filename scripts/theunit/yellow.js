@@ -37,7 +37,7 @@ const yellowDripShoes = extend(Weapon, {
 const YDSB = extend(BasicBulletType, {
   damage: 10,
   knockback: 10,
-  length: 8 * 8,
+  length: 8 * 16,
   width: 8 * 4,
   lifetime: 60 * 5,
   sprite: "yellow-yellowShoes",
