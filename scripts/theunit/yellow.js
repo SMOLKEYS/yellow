@@ -1,6 +1,7 @@
 
 const yellowMelterWeapon = extend(Weapon, {
   reload: 60,
+  x: 8 * 7,
   shots: 15,
   inaccuracy: 30,
   shootSound: Sounds.explosionbig,
