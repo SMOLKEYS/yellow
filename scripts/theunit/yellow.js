@@ -3,7 +3,7 @@ const yellowMelterWeapon = extend(Weapon, {
   reload: 60,
   shots: 15,
   inaccuracy: 30,
-  shootSound: Sounds.explosionBig,
+  shootSound: Sounds.explosionbig,
 });
 
 const YMWB = extend(ContinuousLaserBulletType, {
