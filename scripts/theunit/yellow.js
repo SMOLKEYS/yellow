@@ -16,7 +16,7 @@ const YMWB = extend(ContinuousLaserBulletType, {
 
 const yellowDropkick = extend(Weapon, {
   recoil: -8,
-  reload: 60 * 2,
+  reload: 60,
 });
 
 const YDB = extend(LaserBulletType, {
