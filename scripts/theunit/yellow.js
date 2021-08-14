@@ -1,6 +1,16 @@
 
-//yes
-const yellowGuns = require("theunit/guns");
+const yellowMelterWeapon = extend(Weapon, {
+  reload: 120,
+});
+
+const YMWB = extend(ContinuousLaserBulletType, {
+  damage: 40,
+  length: 8,
+  width: 240,
+  lifetime: 60,
+});
+
+yellowMelterWeapon.bullet = YMWB;
 
 const yellow = extend(UnitType, "yellow", {
   health: Number.MAX_VALUE,
@@ -16,6 +26,6 @@ const yellow = extend(UnitType, "yellow", {
 yellow.constructor = () => extend(UnitEntity, {});
 yellow.defaultController = () => extend(DefenderAI, {});
 //weaponry
-yellow.weapons.add("yellowGuns.yellowMelterWeapon");
+yellow.weapons.add("yellowMelterWeapon");
 
 Log.info("yellow");
