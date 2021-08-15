@@ -1,5 +1,5 @@
 
-const yellowGuns = require("yellow/weaponry");
+const yellowGuns = require("theunit/weaponry");
 
 const yellow = extend(UnitType, "yellow", {
   health: Number.MAX_VALUE,
