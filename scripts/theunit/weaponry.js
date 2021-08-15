@@ -15,7 +15,7 @@ const yellowMelterWeaponBullet = extend(ContinuousLaserBulletType, {
 });
 
 const yellowBloom = extend(Weapon, {
-  reload: 60 * 5,
+  reload: 60 * 10,
   shots: 500,
   inaccuracy: 360,
   shotDelay: 1,
@@ -23,6 +23,8 @@ const yellowBloom = extend(Weapon, {
 
 const yellowBloomBullet = extend(BasicBulletType, {
   damage: 50,
+  width: 8 * 8,
+  length: 8 * 8,
   lifetime: 60 * 3,
   speed: 4,
 });
