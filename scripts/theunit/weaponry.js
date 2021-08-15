@@ -18,7 +18,7 @@ const yellowBloom = extend(Weapon, {
   reload: 60 * 5,
   shots: 500,
   inaccuracy: 360,
-  spacing: 5,
+  shotDelay: 5,
 });
 
 const yellowBloomBullet = extend(BasicBulletType, {
