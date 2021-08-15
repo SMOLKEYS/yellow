@@ -8,7 +8,7 @@ const yellowMelterWeapon = extend(Weapon, {
 });
 
 const yellowMelterWeaponBullet = extend(ContinuousLaserBulletType, {
-  damage: 75 /* begone */,
+  damage: 80 /* begone */,
   width: 8 * 1,
   length: 30 * 8,
   lifetime: 60,
@@ -33,6 +33,7 @@ const yellowCursedDuo = extend(Weapon, {
   reload: 60 * 1,
   shots: 69,
   inaccuracy: 30,
+  rotate: true,
   x: 8 * 6,
   y: 8 * 6,
   sprite: "duo",
