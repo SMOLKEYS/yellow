@@ -15,9 +15,6 @@ const yellow = extend(UnitType, "yellow", {
 yellow.constructor = () => extend(UnitEntity, {});
 yellow.defaultController = () => extend(DefenderAI, {});
 //weaponry
-yellow.weapons.add(
-  yellowGuns.yellowMelterWeapon,
-  yellowGuns.yellowBloom
-);
+yellow.weapons.add(yellowGuns.yellowMelterWeapon, yellowGuns.yellowBloom);
 
 Log.info("yellow");
