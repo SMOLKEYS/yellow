@@ -1,2 +1,2 @@
 require("theunit/yellow");
-require("theunit/guns");
+require("theunit/weaponry");
