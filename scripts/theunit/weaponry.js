@@ -25,8 +25,8 @@ const yellowBloomBullet = extend(BasicBulletType, {
   damage: 50,
   width: 8 * 8,
   height: 8 * 8,
-  lifetime: 60 * 3,
-  speed: 4,
+  lifetime: 60 * 6,
+  speed: 2,
 });
 
 yellowMelterWeapon.bullet = yellowMelterWeaponBullet;
