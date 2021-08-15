@@ -29,3 +29,8 @@ const yellowBloomBullet = extend(BasicBulletType, {
 
 yellowMelterWeapon.bullet = yellowMelterWeaponBullet;
 yellowBloom.bullet = yellowBloomBullet;
+
+module.exports = {
+  yellowMelterWeapon: yellowMelterWeapon,
+  yellowBloom: yellowBloom,
+};
