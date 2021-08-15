@@ -9,8 +9,8 @@ const yellowMelterWeapon = extend(Weapon, {
 
 const yellowMelterWeaponBullet = extend(ContinuousLaserBulletType, {
   damage: 75 /* begone */,
+  width: 8 * 1,
   length: 30 * 8,
-  width: 8,
   lifetime: 60,
 });
 
@@ -24,7 +24,7 @@ const yellowBloom = extend(Weapon, {
 const yellowBloomBullet = extend(BasicBulletType, {
   damage: 50,
   width: 8 * 8,
-  length: 8 * 8,
+  height: 8 * 8,
   lifetime: 60 * 3,
   speed: 4,
 });
