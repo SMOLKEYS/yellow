@@ -15,10 +15,10 @@ const yellowMelterWeaponBullet = extend(ContinuousLaserBulletType, {
 });
 
 const yellowBloom = extend(Weapon, {
-  reload: 60 * 10,
+  reload: 60 * 13,
   shots: 500,
   inaccuracy: 360,
-  shotDelay: 1,
+  shotDelay: 1 /* angery */,
 });
 
 const yellowBloomBullet = extend(BasicBulletType, {
@@ -29,10 +29,29 @@ const yellowBloomBullet = extend(BasicBulletType, {
   speed: 2,
 });
 
+const yellowCursedDuo = extend(Weapon, {
+  reload: 60 * 1,
+  shots: 69,
+  inaccuracy: 30,
+  x: 8 * 6,
+  y: 8 * 6,
+  sprite: "duo",
+});
+
+const yellowCursedDuoBullet = extend(BasicBulletType, {
+  damage: 25,
+  width: 8 * 1,
+  height: 8 * 1,
+  speed: 5,
+  lifetime: 60 * 2,
+});
+
 yellowMelterWeapon.bullet = yellowMelterWeaponBullet;
 yellowBloom.bullet = yellowBloomBullet;
+yellowCursedDuo.bullet = yellowCursedDuoBullet;
 
 module.exports = {
   yellowMelterWeapon: yellowMelterWeapon,
   yellowBloom: yellowBloom,
+  yellowCursedDuo: yellowCursedDuo,
 };
