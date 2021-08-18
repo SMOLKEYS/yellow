@@ -17,7 +17,7 @@ yellow.defaultController = () => extend(DefenderAI, {});
 //weaponry
 yellow.weapons.add(
   guns.meltdownShotgun,
-  guns.lucidity
+  guns.breakdown
 );
 
 module.exports = {
