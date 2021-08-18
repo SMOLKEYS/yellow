@@ -35,9 +35,9 @@ const breakdownBullet = extend(BasicBulletType, {
 });
 
 meltdownShotgun.bullet = meltdownShotgunBullet;
-lucidity.bullet = lucidityBullet;
+breakdown.bullet = breakdownBullet;
 
 module.exports = {
   meltdownShotgun: meltdownShotgun,
-  lucidity: lucidity,
+  breakdown: breakdown,
 };
