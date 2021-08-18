@@ -14,23 +14,24 @@ const meltdownShotgunBullet = extend(ContinuousLaserBulletType, {
   lifetime: 60,
 });
 
-const lucidity = extend(Weapon, {
+const breakdown = extend(Weapon, {
   reload: 60 * 13,
   shots: 500,
   inaccuracy: 360,
-  shotDelay: 1 /* angery */,
+  shotDelay: 1,
+  velocityRnd: 3,
 });
 
-const lucidityBullet = extend(BasicBulletType, {
+const breakdownBullet = extend(BasicBulletType, {
   damage: 70,
   width: 8 * 8,
   height: 8 * 8,
   lifetime: 60 * 6,
   speed: 2,
   color: [
-    ff0000,
-    ff0000
-    ],
+  Pal.accent,
+  Pal.remove
+  ],
 });
 
 meltdownShotgun.bullet = meltdownShotgunBullet;
