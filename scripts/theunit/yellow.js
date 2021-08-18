@@ -1,5 +1,5 @@
 
-const yellowGuns = require("theunit/weaponry");
+const guns = require("theunit/weaponry");
 
 const yellow = extend(UnitType, "yellow", {
   health: Number.MAX_VALUE,
@@ -16,9 +16,8 @@ yellow.constructor = () => extend(UnitEntity, {});
 yellow.defaultController = () => extend(DefenderAI, {});
 //weaponry
 yellow.weapons.add(
-  yellowGuns.yellowMelterWeapon,
-  yellowGuns.yellowBloom,
-  yellowGuns.yellowCursedDuo
+  guns.meltdownShotgun,
+  guns.lucidity
 );
 
 Log.info("yellow");
