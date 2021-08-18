@@ -20,4 +20,8 @@ yellow.weapons.add(
   guns.lucidity
 );
 
+module.exports = {
+  yellow: yellow,
+};
+
 Log.info("yellow");
