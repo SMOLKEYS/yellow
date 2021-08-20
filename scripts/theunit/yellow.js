@@ -20,8 +20,4 @@ yellow.weapons.add(
   guns.breakdown
 );
 
-module.exports = {
-  yellow: yellow,
-};
-
-Log.info("yellow");
+Log.info("SMOLKEYS: Yellow has been activated.");
