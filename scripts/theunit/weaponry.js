@@ -41,3 +41,5 @@ module.exports = {
   meltdownShotgun: meltdownShotgun,
   breakdown: breakdown,
 };
+
+Log.info("SMOLKEYS: Weapons have been activated.");
