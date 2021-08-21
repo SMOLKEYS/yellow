@@ -28,6 +28,7 @@ const bullethellBullet = extend(BasicBulletType, {
   height: 8 * 8,
   lifetime: 60 * 6,
   speed: 2,
+  backColor: Color.valueOf("ff0000"),
 });
 
 meltdownShotgun.bullet = meltdownShotgunBullet;
