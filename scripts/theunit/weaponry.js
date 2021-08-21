@@ -14,7 +14,7 @@ const meltdownShotgunBullet = extend(ContinuousLaserBulletType, {
   lifetime: 60,
 });
 
-const breakdown = extend(Weapon, {
+const bullethell = extend(Weapon, {
   reload: 60 * 13,
   shots: 500,
   inaccuracy: 360,
@@ -22,24 +22,20 @@ const breakdown = extend(Weapon, {
   velocityRnd: 3,
 });
 
-const breakdownBullet = extend(BasicBulletType, {
+const bullethellBullet = extend(BasicBulletType, {
   damage: 70,
   width: 8 * 8,
   height: 8 * 8,
   lifetime: 60 * 6,
   speed: 2,
-  color: [
-  Pal.accent,
-  Pal.remove
-  ],
 });
 
 meltdownShotgun.bullet = meltdownShotgunBullet;
-breakdown.bullet = breakdownBullet;
+bullethell.bullet = bullethellBullet;
 
 module.exports = {
   meltdownShotgun: meltdownShotgun,
-  breakdown: breakdown,
+  bullethell: bullethell,
 };
 
 Log.info("SMOLKEYS: Weapons have been activated.");

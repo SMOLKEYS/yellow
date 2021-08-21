@@ -17,7 +17,7 @@ yellow.defaultController = () => extend(DefenderAI, {});
 //weaponry
 yellow.weapons.add(
   guns.meltdownShotgun,
-  guns.breakdown
+  guns.bullethell
 );
 
 Log.info("SMOLKEYS: Yellow has been activated.");
