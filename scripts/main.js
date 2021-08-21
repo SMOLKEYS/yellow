@@ -1,2 +1,2 @@
-require("theunit/yellow");
-require("theunit/weaponry");
+require("cursed/yellow");
+require("cursed/weaponry");
