@@ -23,7 +23,7 @@ const bullethell = extend(Weapon, {
 });
 
 const bullethellBullet = extend(BasicBulletType, {
-  damage: 70,
+  damage: 75,
   width: 8 * 8,
   height: 8 * 8,
   lifetime: 60 * 6,
