@@ -21,9 +21,12 @@ const bullethell = extend(Weapon, {
   shotDelay: 1,
   velocityRnd: 3,
 });
-
+//coding is real fun innit
 const bullethellBullet = extend(BasicBulletType, {
-  damage: 75,
+  init(b){
+    if(!b) return
+  b.damage = Mathf.random(1000)
+  },
   width: 8 * 8,
   height: 8 * 8,
   lifetime: 60 * 6,
