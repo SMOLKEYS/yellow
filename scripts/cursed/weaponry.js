@@ -8,7 +8,10 @@ const meltdownShotgun = extend(Weapon, {
 });
 
 const meltdownShotgunBullet = extend(ContinuousLaserBulletType, {
-  damage: 80 /* begone */,
+  init(b){
+    if(!b) return
+  b.damage = Mathf.random(100)
+  },
   width: 8 * 1,
   length: 30 * 8,
   lifetime: 60,
